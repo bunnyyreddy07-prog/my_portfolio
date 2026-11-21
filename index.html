@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Ushike Pavan Reddy | Computer Science Student &amp; Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Ushike Pavan Reddy, a Computer Science student and Full Stack Developer building MERN stack web applications. Projects, internships, certifications and contact details." />
+  <meta name="author" content="Ushike Pavan Reddy" />
+  <meta name="theme-color" content="#05050a" />
+  <meta property="og:title" content="Ushike Pavan Reddy | Full Stack Developer" />
+  <meta property="og:description" content="Computer Science student and Full Stack Developer. MERN stack projects, internships and certifications." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%238b5cf6'/%3E%3Cstop offset='1' stop-color='%2338bdf8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%2305050a'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='700' font-size='30' text-anchor='middle' fill='url(%23g)'%3EUP%3C/text%3E%3C/svg%3E" />
+
+  <!-- Apply saved theme before paint (prevents flash) -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+      document.documentElement.classList.add("js");
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#home">Skip to content</a>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="brand" aria-label="Ushike Pavan Reddy - home">
+        <span class="brand-mark">UP</span>
+        <span class="brand-text">Pavan<span class="brand-dot">.</span></span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch to light theme" title="Toggle theme">
+          <i class="fa-solid fa-sun icon-sun" aria-hidden="true"></i>
+          <i class="fa-solid fa-moon icon-moon" aria-hidden="true"></i>
+        </button>
+        <button class="icon-btn nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <span class="bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home" aria-labelledby="heroName">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="grid-bg"></div>
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+      </div>
+
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow reveal"><span class="pulse-dot"></span> Hello, I'm</p>
+          <h1 id="heroName" class="hero-name reveal" style="--d:.08s">
+            <span class="gradient-text">USHIKE</span><br />
+            <span class="gradient-text">PAVAN REDDY</span>
+          </h1>
+          <p class="hero-role reveal" style="--d:.16s" aria-live="off">
+            <span class="prompt">&gt;</span>
+            <span id="typed" class="typed">Computer Science Student | Full Stack Developer</span><span class="caret" aria-hidden="true"></span>
+          </p>
+          <p class="hero-tagline reveal" style="--d:.24s">
+            I'm passionate about building modern web applications and transforming ideas into meaningful digital experiences.
+          </p>
+
+          <div class="hero-cta reveal" style="--d:.32s">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Projects</span> <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+            <a href="assets/resume/Ushike_Pavan_Reddy_Resume.pdf" class="btn btn-ghost" download="Ushike_Pavan_Reddy_Resume.pdf">
+              <i class="fa-solid fa-download" aria-hidden="true"></i> <span>Download Resume</span>
+            </a>
+          </div>
+
+          <ul class="socials reveal" style="--d:.4s" aria-label="Social links">
+            <li><a class="social-btn" href="https://github.com/bunnyyreddy07-prog" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><i class="fa-brands fa-github"></i></a></li>
+            <li><a class="social-btn" href="https://www.linkedin.com/in/pavan-reddy-a4a1a8383/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a class="social-btn" href="mailto:bunnyreddy07@gmail.com" aria-label="Send an email"><i class="fa-solid fa-envelope"></i></a></li>
+          </ul>
+        </div>
+
+        <!-- Developer-themed visual (no photo) -->
+        <div class="hero-visual reveal" style="--d:.2s" aria-hidden="true">
+          <div class="code-window tilt" data-tilt>
+            <div class="cw-bar">
+              <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+              <span class="cw-title">developer.js</span>
+            </div>
+            <pre class="cw-body"><code><span class="ln">1</span><span class="k">const</span> <span class="v">developer</span> <span class="o">=</span> {
+<span class="ln">2</span>  <span class="p">name</span>: <span class="s">"Ushike Pavan Reddy"</span>,
+<span class="ln">3</span>  <span class="p">role</span>: <span class="s">"Full Stack Developer"</span>,
+<span class="ln">4</span>  <span class="p">stack</span>: [<span class="s">"MongoDB"</span>, <span class="s">"Express"</span>,
+<span class="ln">5</span>           <span class="s">"React"</span>, <span class="s">"Node.js"</span>],
+<span class="ln">6</span>  <span class="p">realtime</span>: [<span class="s">"WebRTC"</span>, <span class="s">"Socket.io"</span>],
+<span class="ln">7</span>  <span class="p">learning</span>: <span class="k">true</span>,
+<span class="ln">8</span>  <span class="p">buildsBy</span>: <span class="s">"learning by building"</span>
+<span class="ln">9</span>};</code></pre>
+          </div>
+
+          <div class="float-chip fc-1"><i class="devicon-react-original"></i> React.js</div>
+          <div class="float-chip fc-2"><i class="devicon-nodejs-plain"></i> Node.js</div>
+          <div class="float-chip fc-3"><i class="devicon-mongodb-plain"></i> MongoDB</div>
+          <div class="float-chip fc-4"><i class="devicon-javascript-plain"></i> JavaScript</div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-hint" aria-label="Scroll to About section"><span></span></a>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section" id="about" aria-labelledby="aboutTitle">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-kicker">01 / About</p>
+          <h2 id="aboutTitle" class="section-title">About <span class="gradient-text">Me</span></h2>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>I'm a passionate Computer Science student and aspiring Full Stack Developer with a strong interest in designing and developing modern, scalable, and user-friendly web applications. I enjoy transforming ideas into meaningful digital experiences by combining creative thinking with technical problem-solving.</p>
+            <p>I continuously explore new technologies, strengthen my development skills, and work on practical projects to expand my knowledge. I believe in learning by building, improving through challenges, and creating solutions that make a real difference.</p>
+            <p>My goal is to grow as a skilled software developer and contribute to building innovative technologies that solve real-world problems.</p>
+          </div>
+
+          <aside class="about-card glass gborder reveal" style="--d:.1s" aria-label="Quick facts">
+            <ul class="facts">
+              <li><span class="fact-ic"><i class="fa-solid fa-location-dot"></i></span><div><small>Location</small><strong>Gajwel, Telangana, India</strong></div></li>
+              <li><span class="fact-ic"><i class="fa-solid fa-graduation-cap"></i></span><div><small>Studying</small><strong>B.Tech CSE, GITAM University</strong></div></li>
+              <li><span class="fact-ic"><i class="fa-solid fa-layer-group"></i></span><div><small>Focus</small><strong>Full Stack Web Development (MERN)</strong></div></li>
+              <li><span class="fact-ic"><i class="fa-solid fa-envelope"></i></span><div><small>Email</small><strong><a href="mailto:bunnyreddy07@gmail.com">bunnyreddy07@gmail.com</a></strong></div></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="section section-alt" id="skills" aria-labelledby="skillsTitle">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-kicker">02 / Skills</p>
+          <h2 id="skillsTitle" class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+          <p class="section-sub">The languages, frameworks and tools I use to build and ship web applications.</p>
+        </header>
+
+        <div class="skills-grid">
+          <article class="skill-card glass gborder tilt reveal" data-tilt>
+            <div class="skill-head"><span class="skill-ic"><i class="fa-solid fa-code"></i></span><h3>Programming Languages</h3></div>
+            <ul class="chips">
+              <li><i class="devicon-python-plain"></i>Python</li>
+              <li><i class="devicon-java-plain"></i>Java</li>
+              <li><i class="devicon-c-plain"></i>C</li>
+            </ul>
+          </article>
+
+          <article class="skill-card glass gborder tilt reveal" style="--d:.06s" data-tilt>
+            <div class="skill-head"><span class="skill-ic"><i class="fa-solid fa-laptop-code"></i></span><h3>Frontend</h3></div>
+            <ul class="chips">
+              <li><i class="devicon-html5-plain"></i>HTML</li>
+              <li><i class="devicon-css3-plain"></i>CSS</li>
+              <li><i class="devicon-javascript-plain"></i>JavaScript</li>
+              <li><i class="devicon-react-original"></i>React.js</li>
+            </ul>
+          </article>
+
+          <article class="skill-card glass gborder tilt reveal" style="--d:.12s" data-tilt>
+            <div class="skill-head"><span class="skill-ic"><i class="fa-solid fa-server"></i></span><h3>Backend</h3></div>
+            <ul class="chips">
+              <li><i class="devicon-nodejs-plain"></i>Node.js</li>
+              <li><i class="devicon-express-original"></i>Express.js</li>
+            </ul>
+          </article>
+
+          <article class="skill-card glass gborder tilt reveal" data-tilt>
+            <div class="skill-head"><span class="skill-ic"><i class="fa-solid fa-database"></i></span><h3>Databases</h3></div>
+            <ul class="chips">
+              <li><i class="devicon-mongodb-plain"></i>MongoDB</li>
+              <li><i class="devicon-mysql-plain"></i>MySQL</li>
+            </ul>
+          </article>
+
+          <article class="skill-card glass gborder tilt reveal" style="--d:.06s" data-tilt>
+            <div class="skill-head"><span class="skill-ic"><i class="fa-solid fa-screwdriver-wrench"></i></span><h3>Tools</h3></div>
+            <ul class="chips">
+              <li><i class="devicon-git-plain"></i>Git</li>
+              <li><i class="devicon-github-original"></i>GitHub</li>
+              <li><i class="devicon-vscode-plain"></i>VS Code</li>
+              <li><i class="devicon-postman-plain"></i>Postman</li>
+            </ul>
+          </article>
+
+          <article class="skill-card glass gborder tilt reveal" style="--d:.12s" data-tilt>
+            <div class="skill-head"><span class="skill-ic"><i class="fa-solid fa-brain"></i></span><h3>CS Fundamentals</h3></div>
+            <ul class="chips">
+              <li><i class="fa-solid fa-sitemap"></i>Data Structures &amp; Algorithms</li>
+              <li><i class="fa-solid fa-cubes"></i>Object-Oriented Programming</li>
+              <li><i class="fa-solid fa-table-list"></i>DBMS</li>
+              <li><i class="fa-solid fa-microchip"></i>Operating Systems</li>
+              <li><i class="fa-solid fa-network-wired"></i>Computer Networks</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section" id="projects" aria-labelledby="projectsTitle">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-kicker">03 / Projects</p>
+          <h2 id="projectsTitle" class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+          <p class="section-sub">Full-stack applications built with the MERN stack.</p>
+        </header>
+
+        <div class="projects">
+          <!-- Project 1 -->
+          <article class="project glass gborder reveal">
+            <div class="project-preview preview-trade" role="img" aria-label="Illustration of a stock trading dashboard with a watchlist, price chart and buy and sell buttons">
+              <div class="pv-window">
+                <div class="pv-top">
+                  <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+                  <span class="pv-pill"><i class="fa-solid fa-lock"></i> Protected route</span>
+                </div>
+                <div class="pv-body">
+                  <div class="pv-side">
+                    <span class="pv-label">Watchlist</span>
+                    <div class="pv-row"><i></i><b></b><em class="up"></em></div>
+                    <div class="pv-row"><i></i><b></b><em class="down"></em></div>
+                    <div class="pv-row"><i></i><b></b><em class="up"></em></div>
+                    <div class="pv-row"><i></i><b></b><em class="up"></em></div>
+                  </div>
+                  <div class="pv-main">
+                    <span class="pv-label">Portfolio</span>
+                    <svg viewBox="0 0 300 130" preserveAspectRatio="none" class="pv-chart">
+                      <defs>
+                        <linearGradient id="tradeFill" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="0" stop-color="#8b5cf6" stop-opacity=".45" />
+                          <stop offset="1" stop-color="#8b5cf6" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="tradeLine" x1="0" y1="0" x2="1" y2="0">
+                          <stop offset="0" stop-color="#8b5cf6" />
+                          <stop offset="1" stop-color="#22d3ee" />
+                        </linearGradient>
+                      </defs>
+                      <g stroke="currentColor" stroke-opacity=".12">
+                        <line x1="0" y1="32" x2="300" y2="32" /><line x1="0" y1="65" x2="300" y2="65" /><line x1="0" y1="98" x2="300" y2="98" />
+                      </g>
+                      <path d="M0 105 L25 92 L50 98 L75 74 L100 82 L125 58 L150 66 L175 44 L200 52 L225 30 L250 38 L300 14 L300 130 L0 130 Z" fill="url(#tradeFill)" />
+                      <path class="pv-line" d="M0 105 L25 92 L50 98 L75 74 L100 82 L125 58 L150 66 L175 44 L200 52 L225 30 L250 38 L300 14" fill="none" stroke="url(#tradeLine)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <div class="pv-actions"><span class="pv-buy">Buy</span><span class="pv-sell">Sell</span><span class="pv-sim">Simulated</span></div>
+                  </div>
+                </div>
+              </div>
+              <span class="project-num">01</span>
+            </div>
+
+            <div class="project-info">
+              <div class="project-title-row">
+                <h3>TradeNest <span class="project-sub">Stock Trading Platform</span></h3>
+              </div>
+              <ul class="badges" aria-label="Technologies">
+                <li><i class="devicon-mongodb-plain"></i>MongoDB</li>
+                <li><i class="devicon-express-original"></i>Express.js</li>
+                <li><i class="devicon-react-original"></i>React</li>
+                <li><i class="devicon-nodejs-plain"></i>Node.js</li>
+                <li><i class="fa-solid fa-key"></i>JWT</li>
+              </ul>
+              <p class="project-desc">A full-stack stock trading platform built with the MERN stack.</p>
+              <ul class="feature-list">
+                <li>Secure user authentication and authorization using JWT</li>
+                <li>Protected routes for signed-in users</li>
+                <li>Stock watchlists and portfolio tracking</li>
+                <li>Simulated buy/sell transactions</li>
+                <li>Designed REST APIs</li>
+                <li>MongoDB for user and transaction data</li>
+              </ul>
+              <div class="project-actions">
+                <a class="btn btn-primary btn-sm" href="https://github.com/bunnyyreddy07-prog/TradeNest" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> View on GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project project-rev glass gborder reveal" style="--d:.08s">
+            <div class="project-preview preview-meet" role="img" aria-label="Illustration of a video conference room with participant tiles and call controls">
+              <div class="pv-window">
+                <div class="pv-top">
+                  <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+                  <span class="pv-pill"><i class="fa-solid fa-shield-halved"></i> Unique room ID</span>
+                  <span class="pv-live"><i></i> Live</span>
+                </div>
+                <div class="meet-grid">
+                  <div class="tile t1"><i class="fa-solid fa-user"></i><span class="speaking"></span></div>
+                  <div class="tile t2"><i class="fa-solid fa-user"></i></div>
+                  <div class="tile t3"><i class="fa-solid fa-user"></i></div>
+                  <div class="tile t4"><i class="fa-solid fa-user"></i></div>
+                </div>
+                <div class="meet-controls">
+                  <span><i class="fa-solid fa-microphone"></i></span>
+                  <span><i class="fa-solid fa-video"></i></span>
+                  <span><i class="fa-solid fa-display"></i></span>
+                  <span class="end"><i class="fa-solid fa-phone-slash"></i></span>
+                </div>
+              </div>
+              <span class="project-num">02</span>
+            </div>
+
+            <div class="project-info">
+              <div class="project-title-row">
+                <h3>MeetFlow <span class="project-sub">Video Conferencing Platform</span></h3>
+              </div>
+              <ul class="badges" aria-label="Technologies">
+                <li><i class="devicon-mongodb-plain"></i>MongoDB</li>
+                <li><i class="devicon-express-original"></i>Express.js</li>
+                <li><i class="devicon-react-original"></i>React</li>
+                <li><i class="devicon-nodejs-plain"></i>Node.js</li>
+                <li><i class="fa-solid fa-video"></i>WebRTC</li>
+                <li><i class="devicon-socketio-original"></i>Socket.io</li>
+              </ul>
+              <p class="project-desc">A full-stack video conferencing platform built with the MERN stack and a responsive user interface.</p>
+              <ul class="feature-list">
+                <li>JWT-based authentication</li>
+                <li>Protected meeting sessions</li>
+                <li>Real-time peer-to-peer audio/video with WebRTC and Socket.io</li>
+                <li>Unique room IDs for every meeting</li>
+                <li>Designed RESTful APIs</li>
+                <li>MongoDB for user profiles, meeting details and session history</li>
+              </ul>
+              <div class="project-actions">
+                <a class="btn btn-primary btn-sm" href="https://github.com/bunnyyreddy07-prog/MeetFlow" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> View on GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="more-link reveal">
+          More on my <a href="https://github.com/bunnyyreddy07-prog" target="_blank" rel="noopener noreferrer">GitHub profile <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section class="section section-alt" id="experience" aria-labelledby="expTitle">
+      <div class="container narrow">
+        <header class="section-head reveal">
+          <p class="section-kicker">04 / Experience</p>
+          <h2 id="expTitle" class="section-title">Internship <span class="gradient-text">Experience</span></h2>
+        </header>
+
+        <ol class="timeline">
+          <li class="tl-item reveal">
+            <span class="tl-node" aria-hidden="true"><i class="fa-solid fa-briefcase"></i></span>
+            <div class="tl-card glass gborder">
+              <div class="tl-meta"><span class="tl-date"><i class="fa-regular fa-calendar"></i> June 2026 &ndash; July 2026</span><span class="tag">Virtual</span></div>
+              <h3>Web Development Intern <span class="muted">/ Frontend Development Intern</span></h3>
+              <p class="tl-org"><i class="fa-solid fa-building"></i> CodSoft</p>
+              <ul class="feature-list">
+                <li>Developed a responsive Calculator application using HTML, CSS, and JavaScript.</li>
+                <li>Built the frontend of a Quiz Maker web application with a responsive user interface.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="tl-item reveal" style="--d:.08s">
+            <span class="tl-node" aria-hidden="true"><i class="fa-solid fa-briefcase"></i></span>
+            <div class="tl-card glass gborder">
+              <div class="tl-meta"><span class="tl-date"><i class="fa-regular fa-calendar"></i> May 1, 2026 &ndash; June 30, 2026</span><span class="tag">Offline</span></div>
+              <h3>Web Development Intern</h3>
+              <p class="tl-org"><i class="fa-solid fa-building"></i> Codeworks EduTech Services Pvt. Ltd.</p>
+              <ul class="feature-list">
+                <li>Short-term internship organized in collaboration with the Andhra Pradesh State Council of Higher Education (APSCHE) and GITAM.</li>
+                <li>Mode: Offline.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== CERTIFICATIONS ===================== -->
+    <section class="section" id="certifications" aria-labelledby="certTitle">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-kicker">05 / Certifications</p>
+          <h2 id="certTitle" class="section-title"><span class="gradient-text">Certifications</span></h2>
+          <p class="section-sub">Select a certificate to view the original document.</p>
+        </header>
+
+        <div class="cert-grid">
+          <article class="cert-card glass gborder tilt reveal" data-tilt>
+            <button class="cert-thumb" type="button" data-cert-open
+              data-title="GenAI Powered Data Analytics Job Simulation"
+              data-issuer="Tata / Forage" data-date="August 4, 2026"
+              data-img="assets/certificates/genai-data-analytics-forage.jpg"
+              data-pdf="assets/certificates/genai-data-analytics-forage.pdf"
+              aria-label="Preview GenAI Powered Data Analytics certificate">
+              <img src="assets/certificates/genai-data-analytics-forage.jpg" alt="GenAI Powered Data Analytics Job Simulation certificate preview" loading="lazy" />
+              <span class="thumb-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i> Preview</span>
+            </button>
+            <div class="cert-info">
+              <h3>GenAI Powered Data Analytics Job Simulation</h3>
+              <p class="cert-issuer"><i class="fa-solid fa-award"></i> Tata / Forage</p>
+              <p class="cert-date">August 4, 2026</p>
+              <button class="btn btn-ghost btn-sm" type="button" data-cert-open
+                data-title="GenAI Powered Data Analytics Job Simulation"
+                data-issuer="Tata / Forage" data-date="August 4, 2026"
+                data-img="assets/certificates/genai-data-analytics-forage.jpg"
+                data-pdf="assets/certificates/genai-data-analytics-forage.pdf"><i class="fa-solid fa-eye"></i> View Certificate</button>
+            </div>
+          </article>
+
+          <article class="cert-card glass gborder tilt reveal" style="--d:.06s" data-tilt>
+            <button class="cert-thumb" type="button" data-cert-open
+              data-title="Data Visualisation: Empowering Business with Effective Insights"
+              data-issuer="Tata / Forage" data-date="August 4, 2026"
+              data-img="assets/certificates/data-visualisation-forage.jpg"
+              data-pdf="assets/certificates/data-visualisation-forage.pdf"
+              aria-label="Preview Data Visualisation certificate">
+              <img src="assets/certificates/data-visualisation-forage.jpg" alt="Data Visualisation certificate preview" loading="lazy" />
+              <span class="thumb-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i> Preview</span>
+            </button>
+            <div class="cert-info">
+              <h3>Data Visualisation: Empowering Business with Effective Insights</h3>
+              <p class="cert-issuer"><i class="fa-solid fa-award"></i> Tata / Forage</p>
+              <p class="cert-date">August 4, 2026</p>
+              <button class="btn btn-ghost btn-sm" type="button" data-cert-open
+                data-title="Data Visualisation: Empowering Business with Effective Insights"
+                data-issuer="Tata / Forage" data-date="August 4, 2026"
+                data-img="assets/certificates/data-visualisation-forage.jpg"
+                data-pdf="assets/certificates/data-visualisation-forage.pdf"><i class="fa-solid fa-eye"></i> View Certificate</button>
+            </div>
+          </article>
+
+          <article class="cert-card glass gborder tilt reveal" style="--d:.12s" data-tilt>
+            <button class="cert-thumb" type="button" data-cert-open
+              data-title="Web Development"
+              data-issuer="CodSoft" data-date="2026"
+              data-img="assets/certificates/web-development-codsoft.jpg"
+              data-pdf="assets/certificates/web-development-codsoft.pdf"
+              aria-label="Preview CodSoft Web Development certificate">
+              <img src="assets/certificates/web-development-codsoft.jpg" alt="CodSoft Web Development certificate preview" loading="lazy" />
+              <span class="thumb-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i> Preview</span>
+            </button>
+            <div class="cert-info">
+              <h3>Web Development</h3>
+              <p class="cert-issuer"><i class="fa-solid fa-award"></i> CodSoft</p>
+              <p class="cert-date">2026</p>
+              <button class="btn btn-ghost btn-sm" type="button" data-cert-open
+                data-title="Web Development"
+                data-issuer="CodSoft" data-date="2026"
+                data-img="assets/certificates/web-development-codsoft.jpg"
+                data-pdf="assets/certificates/web-development-codsoft.pdf"><i class="fa-solid fa-eye"></i> View Certificate</button>
+            </div>
+          </article>
+
+          <article class="cert-card glass gborder tilt reveal" data-tilt>
+            <button class="cert-thumb" type="button" data-cert-open
+              data-title="Short-Term Internship in Web Development"
+              data-issuer="Codeworks EduTech / APSCHE" data-date="June 30, 2026"
+              data-img="assets/certificates/web-development-internship-apsche.jpg"
+              data-pdf="assets/certificates/web-development-internship-apsche.pdf"
+              aria-label="Preview Short-Term Internship in Web Development certificate">
+              <img src="assets/certificates/web-development-internship-apsche.jpg" alt="Short-Term Internship in Web Development certificate preview" loading="lazy" />
+              <span class="thumb-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i> Preview</span>
+            </button>
+            <div class="cert-info">
+              <h3>Short-Term Internship in Web Development</h3>
+              <p class="cert-issuer"><i class="fa-solid fa-award"></i> Codeworks EduTech / APSCHE</p>
+              <p class="cert-date">June 30, 2026</p>
+              <button class="btn btn-ghost btn-sm" type="button" data-cert-open
+                data-title="Short-Term Internship in Web Development"
+                data-issuer="Codeworks EduTech / APSCHE" data-date="June 30, 2026"
+                data-img="assets/certificates/web-development-internship-apsche.jpg"
+                data-pdf="assets/certificates/web-development-internship-apsche.pdf"><i class="fa-solid fa-eye"></i> View Certificate</button>
+            </div>
+          </article>
+
+          <!--
+            CISCO CERTIFICATE: to enable preview, add the files
+              assets/certificates/cisco-networking-basics.jpg  (preview image)
+              assets/certificates/cisco-networking-basics.pdf  (PDF)
+            then replace the "cert-pending" block below with the same markup used by the other cards.
+          -->
+          <article class="cert-card cert-pending glass gborder reveal" style="--d:.06s">
+            <div class="cert-thumb cert-thumb-empty" aria-hidden="true">
+              <i class="fa-solid fa-network-wired"></i>
+              <span>Certificate file not added yet</span>
+            </div>
+            <div class="cert-info">
+              <h3>Cisco Networking Basics</h3>
+              <p class="cert-issuer"><i class="fa-solid fa-award"></i> Cisco</p>
+              <p class="cert-date">Listed on resume</p>
+              <button class="btn btn-ghost btn-sm" type="button" disabled aria-disabled="true"><i class="fa-solid fa-eye-slash"></i> Certificate unavailable</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EDUCATION ===================== -->
+    <section class="section section-alt" id="education" aria-labelledby="eduTitle">
+      <div class="container narrow">
+        <header class="section-head reveal">
+          <p class="section-kicker">06 / Education</p>
+          <h2 id="eduTitle" class="section-title">My <span class="gradient-text">Education</span></h2>
+        </header>
+
+        <ol class="timeline">
+          <li class="tl-item reveal">
+            <span class="tl-node" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></span>
+            <div class="tl-card glass gborder">
+              <div class="tl-meta"><span class="tl-date"><i class="fa-regular fa-calendar"></i> 2023 &ndash; 2027</span></div>
+              <h3>B.Tech &ndash; Computer Science and Engineering</h3>
+              <p class="tl-org"><i class="fa-solid fa-building-columns"></i> GITAM University</p>
+            </div>
+          </li>
+          <li class="tl-item reveal" style="--d:.08s">
+            <span class="tl-node" aria-hidden="true"><i class="fa-solid fa-book-open"></i></span>
+            <div class="tl-card glass gborder">
+              <div class="tl-meta"><span class="tl-date"><i class="fa-regular fa-calendar"></i> 2022 &ndash; 2023</span></div>
+              <h3>Intermediate</h3>
+              <p class="tl-org"><i class="fa-solid fa-building-columns"></i> PGR Junior College</p>
+            </div>
+          </li>
+          <li class="tl-item reveal" style="--d:.16s">
+            <span class="tl-node" aria-hidden="true"><i class="fa-solid fa-school"></i></span>
+            <div class="tl-card glass gborder">
+              <div class="tl-meta"><span class="tl-date"><i class="fa-regular fa-calendar"></i> 2021</span></div>
+              <h3>Schooling</h3>
+              <p class="tl-org"><i class="fa-solid fa-building-columns"></i> Shantinikethan Vidyalaya</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section" id="contact" aria-labelledby="contactTitle">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-kicker">07 / Contact</p>
+          <h2 id="contactTitle" class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+          <p class="section-sub">Have an opportunity, a project idea or just want to say hello? Send me a message.</p>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <a class="contact-item glass gborder" href="mailto:bunnyreddy07@gmail.com">
+              <span class="ci-ic"><i class="fa-solid fa-envelope"></i></span>
+              <span><small>Email</small><strong>bunnyreddy07@gmail.com</strong></span>
+            </a>
+            <a class="contact-item glass gborder" href="tel:+919182569364">
+              <span class="ci-ic"><i class="fa-solid fa-phone"></i></span>
+              <span><small>Phone</small><strong>+91 9182569364</strong></span>
+            </a>
+            <div class="contact-item glass gborder">
+              <span class="ci-ic"><i class="fa-solid fa-location-dot"></i></span>
+              <span><small>Location</small><strong>Gajwel, Telangana, India</strong></span>
+            </div>
+            <div class="contact-socials">
+              <a class="social-btn" href="https://github.com/bunnyyreddy07-prog" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a class="social-btn" href="https://www.linkedin.com/in/pavan-reddy-a4a1a8383/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+          <form class="contact-form glass gborder reveal" id="contactForm" style="--d:.1s" novalidate>
+            <div class="field">
+              <label for="cf-name">Name</label>
+              <input id="cf-name" name="name" type="text" autocomplete="name" required maxlength="100" placeholder="Your name" />
+              <span class="field-error" data-for="name"></span>
+            </div>
+            <div class="field">
+              <label for="cf-email">Email</label>
+              <input id="cf-email" name="email" type="email" autocomplete="email" required maxlength="150" placeholder="you@example.com" />
+              <span class="field-error" data-for="email"></span>
+            </div>
+            <div class="field">
+              <label for="cf-subject">Subject</label>
+              <input id="cf-subject" name="subject" type="text" maxlength="150" placeholder="What is this about?" />
+            </div>
+            <div class="field">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="5" required maxlength="2000" placeholder="Write your message..."></textarea>
+              <span class="field-error" data-for="message"></span>
+            </div>
+            <!-- Honeypot field for spam bots (hidden from people) -->
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true" />
+
+            <button type="submit" class="btn btn-primary btn-block" id="cfSubmit">
+              <span class="btn-label"><i class="fa-solid fa-paper-plane"></i> Send Message</span>
+              <span class="btn-loading" hidden><i class="fa-solid fa-circle-notch fa-spin"></i> Sending...</span>
+            </button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#home" class="brand"><span class="brand-mark">UP</span><span class="brand-text">Pavan<span class="brand-dot">.</span></span></a>
+        <p>Computer Science Student &amp; Full Stack Developer<br />Gajwel, Telangana, India</p>
+      </div>
+      <ul class="footer-links" aria-label="Footer navigation">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <ul class="socials footer-socials" aria-label="Social links">
+        <li><a class="social-btn" href="https://github.com/bunnyyreddy07-prog" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+        <li><a class="social-btn" href="https://www.linkedin.com/in/pavan-reddy-a4a1a8383/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        <li><a class="social-btn" href="mailto:bunnyreddy07@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a></li>
+      </ul>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year">2026</span> Ushike Pavan Reddy. All rights reserved.</p>
+      <p>Designed &amp; built with HTML, CSS and JavaScript.</p>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <!-- ===================== CERTIFICATE MODAL ===================== -->
+  <div class="modal" id="certModal" role="dialog" aria-modal="true" aria-labelledby="certModalTitle" hidden>
+    <div class="modal-backdrop" data-modal-close></div>
+    <div class="modal-dialog glass gborder">
+      <button class="modal-close icon-btn" type="button" data-modal-close aria-label="Close certificate preview"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-head">
+        <h3 id="certModalTitle"></h3>
+        <p id="certModalMeta"></p>
+      </div>
+      <div class="modal-img"><img id="certModalImg" src="" alt="" /></div>
+      <div class="modal-actions">
+        <a class="btn btn-primary btn-sm" id="certOpenPdf" href="#" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Open PDF in new tab</a>
+        <a class="btn btn-ghost btn-sm" id="certDownload" href="#" download><i class="fa-solid fa-download"></i> Download</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
